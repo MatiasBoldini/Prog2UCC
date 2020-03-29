@@ -29,5 +29,11 @@ for (int i=0; i<n; i++){
 do {cout<<"Ingrese posicion de la fila entre 1 y "<<m<<endl;
     cin>>f;
     cout<<"Ingrese posicion de la columna entre 1 y "<<n<<endl;
+    cin>>c;
     }
+    while ((f<0 && f>m-1) && (c<0 && c>n-1));
+
+
+iinicial=f-1;
+ifinal=f+1
 }
