@@ -8,7 +8,7 @@ int c, cont=0;
 
 int main(){
     cout<<"Ingrese cantidad de caracteres pertenecientes a la cadena: "<<endl;
-    vocales(cadena);
+    cont = vocales(cadena);
     c=cont;
     cout<<"Cantidad de vocales minusculas; "<<c<<endl;
 }
