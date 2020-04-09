@@ -1,5 +1,6 @@
 #include <iostream>
-using namespace.std;
+
+using namespace std;
 
 int main() {
     int m,n,f,c,M[20][20], iinicial, ifinal, jinicial, jfinal, s=0;
