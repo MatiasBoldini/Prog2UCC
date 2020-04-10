@@ -1,26 +1,20 @@
 #include <iostream>
-#include <string.h>
 using namespace std;
 
-char cadena[50];
-int vocales (char*);
-int c, cont=0;
+int vocales(char[]);
 
 int main(){
-    cout<<"Ingrese cantidad de caracteres pertenecientes a la cadena: "<<endl;
-    cont = vocales(cadena);
-    c=cont;
-    cout<<"Cantidad de vocales minusculas; "<<c<<endl;
+    char cadena[50];
+    cout<<"Ingrese la cadena de texto: ";
+    cin.getline(cadena,50);
+    cout<<"La cantidad de vocales minusculas en la cadena es de: "<<vocales(cadena)<<endl;
 }
 
-int vocales(char*p){
-    cin.getline(cadena, 50);
-    int lon=strlen(p);
-    cout<<"longitud del puntero "<<lon<<endl;
-    for (int i=0; i<lon; i++){
-        if ((*(p+i)=='a') || (*(p+i)=='e') || (*(p+i)=='i') || (*(p+i)=='o') || (*(p+i)=='u')){
-            cont ++;
-        return cont;
-        }
+int vocales(char c[]){
+    int cant=0, i=0;
+    while(c[i]!='\0'){
+        if (c[i]=='a' or c[i]=='e' or c[i]=='i' or c[i]=='o' or c[i]=='u') cant++;
+        i++;               
     }
+    return cant;
 }
