@@ -11,10 +11,15 @@ int main(){
 }
 
 int vocales(char c[]){
-    int cant=0, i=0;
+    int cant=0, n=0, i=0;
     while(c[i]!='\0'){
-        if (c[i]=='a' or c[i]=='e' or c[i]=='i' or c[i]=='o' or c[i]=='u') cant++;
-        i++;               
+        n++;
+        i++;
+    }
+    char *p;
+    p = &c[0];
+    for (i=0; i<n; i++){
+        if (p[i]=='a' or p[i]=='e' or p[i]=='i' or p[i]=='o' or p[i]=='u') cant++;
     }
     return cant;
 }
