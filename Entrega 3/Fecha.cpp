@@ -1,6 +1,6 @@
 /* En este archivo se implementan los metodos de la clase Fecha definida en Fecha.h */
 
-#include "Fecha.h" // Importa los elementos en fecha.h
+#include "fecha.h" // Importa los elementos en fecha.h
 
 // Constructor que inicializa la fecha en 01/01/1900
 Fecha::Fecha(){
